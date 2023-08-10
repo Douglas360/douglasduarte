@@ -3,13 +3,18 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img7.png";
+import projImg8 from "../assets/img/project-img8.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const landingPage = [
     {
       title: "Business Startup",
       description: "Design & Development",
@@ -19,6 +24,58 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg3,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg4,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg2,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg3,
+    },
+  ];
+
+  const fullStack = [    
+    {
+      title: "Início de Negócio",
+      description: "Design e Desenvolvimento",
+      imgUrl: projImg4,
+    },
+    {
+      title: "Solução de E-Commerce",
+      description: "Gestão de Produtos e Integração de Pagamentos",
+      imgUrl: projImg5,
+    },
+    {
+      title: "Plataforma de Gestão Financeira",
+      description: "Rastreamento de Despesas e Integração Bancária",
+      imgUrl: projImg6,
+    },
+];
+
+
+  const frontEnd = [
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg7,
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg8,
     },
     {
       title: "Business Startup",
@@ -41,7 +98,6 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
   ];
-
   return (
     <section className="project" id="projects">
       <Container>
@@ -50,25 +106,25 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Projects</h2>
-                  <p>Some of the projects I've developed.</p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                  <h2>Projetos</h2>
+                  <p>Alguns dos projetos que desenvolvi.</p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="landingPage">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Landing Page</Nav.Link>
+                        <Nav.Link eventKey="landingPage">Landing Page</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">FullStack</Nav.Link>
+                        <Nav.Link eventKey="fullStack">FullStack</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">FrontEnd</Nav.Link>
+                        <Nav.Link eventKey="frontEnd">FrontEnd</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                      <Tab.Pane eventKey="first">
+                      <Tab.Pane eventKey="landingPage">
                         <Row>
                           {
-                            projects.map((project, index) => {
+                            landingPage.map((project, index) => {
                               return (
                                 <ProjectCard
                                   key={index}
@@ -79,11 +135,33 @@ export const Projects = () => {
                           }
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <Tab.Pane eventKey="fullStack">
+                        <Row>
+                          {
+                            fullStack.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+                              )
+                            })
+                          }
+                        </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <Tab.Pane eventKey="frontEnd">
+                        <Row>
+                          {
+                            frontEnd.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+                              )
+                            })
+                          }
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

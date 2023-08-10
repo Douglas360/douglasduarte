@@ -12,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Front-End Engineer", "Web Developer", "Full-Stack Developer?"];
+  const toRotate = ["Front-End Engineer", "Web Developer", "Full-Stack Developer?"];
   const period = 2000;
 
 
@@ -58,13 +58,13 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline">Bem Vindo ao meu Portfolio</span>
                   <h1>{`Hi! I'm Douglas`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm a Front-End Developer with a passion for creating modern, user-friendly websites and applications. With a strong background in HTML, CSS, JavaScript, and responsive design, I bring a unique skill set to every project I work on.
+                  <p>Sou um desenvolvedor front-end apaixonado por criar sites e aplicativos modernos e fáceis de usar. Com uma sólida experiência em HTML, CSS, JavaScript e design responsivo, trago um conjunto de habilidades exclusivo para cada projeto em que trabalho.
 
-                    Whether you need a simple website, a complex web application, or anything in between, I have the experience and expertise to bring your vision to life. My goal is to help my clients achieve their business objectives through effective website design and development.
+                    Se você precisa de um site simples, um aplicativo da web complexo ou qualquer coisa intermediária, tenho a experiência e o conhecimento para dar vida à sua visão. Meu objetivo é ajudar meus clientes a atingir seus objetivos de negócios por meio de design e desenvolvimento de sites eficazes.
 
-                    Let's work together to create something amazing!</p>
+                    Vamos trabalhar juntos para criar algo incrível!</p>
 
                   <button onClick={() => {
                     let target = document.querySelector('#connect');

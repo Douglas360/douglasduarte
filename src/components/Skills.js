@@ -36,7 +36,7 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>Having a solid skill set is an incredibly valuable asset in today's competitive job market. By continuously seeking to improve and build upon your knowledge.</p>
+              <p>Ter um conjunto sólido de habilidades é um ativo incrivelmente valioso no mercado de trabalho competitivo de hoje. Buscando continuamente melhorar e desenvolver seu conhecimento.</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <img src={react} alt="Image" />
