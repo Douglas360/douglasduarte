@@ -10,7 +10,7 @@ export const Projects = () => {
       title: "NFT Marketplace",
       subTitle: "Design & Development",
       description:
-        "Marketplace de NFTs foi desenvolvido para oferecer uma experiência excepcional de mintagem, compra e venda de NFTs. Criado com uma visão de inovação e acessibilidade, esse Marketplace NFT é um espaço vibrante onde criadores e colecionadores se encontram para celebrar a arte digital e a criatividade. Com recursos intuitivos e uma interface de usuário amigável, é uma plataforma robusta e confiável para você explorar e interagir com o emocionante mundo dos NFTs.",
+        "An NFT Marketplace designed to offer an exceptional experience for minting, buying, and selling NFTs. Created with a vision of innovation and accessibility, this NFT Marketplace is a vibrant space where creators and collectors come together to celebrate digital art and creativity. With intuitive features and a user-friendly interface, it is a robust and reliable platform for you to explore and interact with the exciting world of NFTs.",
       imgUrl: image.projImg10,
       techStack: [
         "NextJs",
@@ -26,7 +26,7 @@ export const Projects = () => {
       title: "NFT Marketplace",
       subTitle: "Design & Development",
       description:
-        "Desenvolvi um Marketplace de NFTs que vai além das expectativas, proporcionando uma experiência única para mintagem, compra e venda de NFTs. Esse Marketplace NFT é a essência da inovação, oferecendo uma plataforma dinâmica e envolvente para criadores e entusiastas de arte digital.",
+        "I developed an NFT Marketplace that exceeds expectations, providing a unique experience for minting, buying, and selling NFTs. This NFT Marketplace embodies innovation, offering a dynamic and engaging platform for digital art creators and enthusiasts.",
       imgUrl: image.projImg11,
       techStack: [
         "React",
@@ -42,7 +42,7 @@ export const Projects = () => {
       title: "Site WEb3",
       subTitle: "Design & Development",
       description:
-        "Meu website pessoal evoluiu para um espaço inovador na web, agora impulsionado pela tecnologia Web3. A cada projeto que realizo, crio um NFT exclusivo, armazenando todas as informações essenciais na blockchain. Cada NFT contém a imagem, título, descrição e tecnologias utilizadas em cada projeto. Em outras palavras, todas as informações relevantes estão seguramente registradas na blockchain, garantindo transparência e autenticidade em cada trabalho apresentado.",
+        "My personal website has evolved into an innovative space on the web, now powered by Web3 technology. With each project I undertake, I create a unique NFT, storing all essential information on the blockchain. Each NFT contains the image, title, description, and technologies used in the project. In other words, all relevant information is securely recorded on the blockchain, ensuring transparency and authenticity in every showcased work.",
       imgUrl: image.projImg12,
       techStack: [
         "React",
@@ -59,33 +59,34 @@ export const Projects = () => {
   const fullStack = [
     {
       title: "ERP Dashboard",
-      subTitle: "Design e Desenvolvimento",
+      subTitle: "Design and Development",
       description:
-        "Sistema ERP desenvolvido para otimizar as principais rotinas de uma empresa, abrangendo desde o cadastro de funcionários até a gestão de equipes e o gerenciamento de projetos.",
+        "An ERP system developed to optimize key business routines, covering everything from employee registration to team management and project management.",
       imgUrl: image.projImg7,
       techStack: ["React", "Tailwindcss", "NodeJs", "TypeScript", "Aws"],
     },
     {
-      title: "Solução de E-Commerce",
-      subTitle: "Design e Desenvolvimento",
-      description: "Gestão de Produtos e Integração de Pagamentos",
+      title: "E-Commerce Solution",
+      subTitle: "Design and Development",
+      description: "Product Management and Payment Integration",
       imgUrl: image.projImg5,
       techStack: ["React", "Tailwindcss", "NodeJs", "TypeScript", "Api", "Aws"],
     },
     {
-      title: "Plataforma de Gestão Financeira",
-      subTitle: "Design e Desenvolvimento",
-      description: "Rastreamento de Despesas e Integração Bancária",
+      title: "Financial Management Platform",
+      subTitle: "Design and Development",
+      description: "Expense Tracking and Banking Integration",
       imgUrl: image.projImg6,
+      techStack: ["React", "Tailwindcss", "NodeJs", "TypeScript", "Aws"],
     },
   ];
 
   const frontEnd = [
     {
-      title: "Landing Page Company",
+      title: "Landing Page for Company",
       subTitle: "Development",
       description:
-        "Desenvolvi esta landing page com total foco na responsividade, garantindo uma experiência excepcional em qualquer dispositivo. Cada pixel e elemento foi cuidadosamente ajustado para se adaptar perfeitamente a telas de todos os tamanhos, desde smartphones até desktops.",
+        "I developed this landing page with a strong focus on responsiveness, ensuring an exceptional experience on any device. Every pixel and element was carefully adjusted to adapt perfectly to screens of all sizes, from smartphones to desktops.",
       imgUrl: image.projImg8,
       techStack: ["React", "Tailwindcss"],
     },
@@ -93,7 +94,7 @@ export const Projects = () => {
       title: "Business Startup Landing Page",
       subTitle: "Development",
       description:
-        "Essa LP foi desenvolvida com uma abordagem centrada na responsividade. Cada detalhe foi meticulosamente projetado para se ajustar perfeitamente a qualquer dispositivo, proporcionando uma experiência consistente e envolvente em todas as telas. ",
+        "This landing page was developed with a responsive-first approach. Every detail was meticulously designed to fit perfectly on any device, providing a consistent and engaging experience across all screens.",
       imgUrl: image.projImg3,
       techStack: ["React", "Css"],
     },
@@ -111,8 +112,8 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Projetos</h2>
-                  <p>Alguns dos projetos que desenvolvi.</p>
+                  <h2>Projects</h2>
+                  <p>Some of the projects I developed.</p>
                   <Tab.Container
                     id="projects-tabs"
                     defaultActiveKey="blockchain"
