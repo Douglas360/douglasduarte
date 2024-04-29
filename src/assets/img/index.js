@@ -7,6 +7,7 @@ import solidityLogo from "./solidity.svg";
 import hardhatLogo from "./hardhat.svg";
 import ethereumLogo from "./ethereum.svg";
 import blockchainLogo from "./blockchain.svg";
+import chainlinkLogo from "./chainlink.svg";
 import projImg1 from "./project-img1.png";
 import projImg2 from "./project-img2.png";
 import projImg3 from "./project-img3.png";
@@ -18,6 +19,7 @@ import projImg8 from "./project-img8.png";
 import projImg10 from "./project-img10.png";
 import projImg11 from "./project-img11.png";
 import projImg12 from "./project-img12.png";
+import projImg13 from "./project-img13.png";
 
 import colorSharp2 from "./color-sharp2.png";
 
@@ -38,11 +40,13 @@ const images = {
   projImg10,
   projImg11,
   projImg12,
+  projImg13,
   colorSharp2,
   solidityLogo,
   hardhatLogo,
   ethereumLogo,
   blockchainLogo,
+  chainlinkLogo,
 };
 
 export default images;

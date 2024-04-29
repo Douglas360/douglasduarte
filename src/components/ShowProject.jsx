@@ -16,6 +16,7 @@ import {
   SiSolidity,
   SiIpfs,
   SiOpenzeppelin,
+  SiChainlink,
 } from "react-icons/si";
 import { TbBrandNextjs, TbApi } from "react-icons/tb";
 
@@ -45,6 +46,7 @@ export const ShowProject = () => {
       Ethereum: <FaEthereum />,
       NextJs: <TbBrandNextjs />,
       Api: <TbApi />,
+      Chainlink: <SiChainlink />,
     };
 
     return techStack?.map((tech, index) => (

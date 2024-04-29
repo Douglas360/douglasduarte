@@ -7,6 +7,22 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const blockchain = [
     {
+      title: "Raffle Dapp",
+      subTitle: "Design, Smart Contract & Development",
+      description:
+        "A decentralized application that allows users to create and participate in raffles. The smart contract is deployed on the Ethereum blockchain, ensuring transparency and security in every transaction. Use a Chain Link VRF to ensure the randomness of the raffle.",
+      imgUrl: image.projImg13,
+      techStack: [
+        "React",
+        "Tailwindcss",
+        "Solidity",
+        "HardHat",
+        "Ipfs",
+        "Chainlink",
+        "Ethereum",
+      ],
+    },
+    {
       title: "NFT Marketplace",
       subTitle: "Design & Development",
       description:
