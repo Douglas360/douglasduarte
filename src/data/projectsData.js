@@ -350,5 +350,177 @@ export const getProjects = (language) => {
       imgUrl: image.projImg3,
       techStack: ["React", "CSS"],
     },
+
+    // ── DESIGN ────────────────────────────────────────────────────────
+    {
+      id: "brand-identity-aurora",
+      slug: "brand-identity-aurora",
+      category: "design",
+      categoryLabel: "Design",
+      accentColor: "#c9a84c",
+      title: pt ? "Brand Identity — Aurora Finance" : "Brand Identity — Aurora Finance",
+      subTitle: pt ? "Branding & Identidade Visual" : "Branding & Visual Identity",
+      description: pt
+        ? "Criação completa da identidade visual da Aurora Financial Consultants: logo mark, tipografia, paleta premium dourado e preto, papelaria corporativa (cartão, letterhead, envelope) e brand book com diretrizes de uso."
+        : "Complete visual identity creation for Aurora Financial Consultants: logo mark, typography, premium gold & black palette, corporate stationery (card, letterhead, envelope) and brand book with usage guidelines.",
+      highlights: pt
+        ? ["Logo mark exclusivo e versões", "Paleta premium ouro e preto", "Papelaria corporativa completa", "Brand book com diretrizes de uso"]
+        : ["Exclusive logo mark & versions", "Premium gold & black palette", "Complete corporate stationery", "Brand book with usage guidelines"],
+      imgUrl: image.designBrandIdentity,
+      techStack: ["Adobe Illustrator", "Adobe InDesign", "Figma", "Photoshop"],
+    },
+    {
+      id: "logo-design-quantumix",
+      slug: "logo-design-quantumix",
+      category: "design",
+      categoryLabel: "Design",
+      accentColor: "#7b61ff",
+      title: pt ? "Logo Design — Quantumix Tech" : "Logo Design — Quantumix Tech",
+      subTitle: pt ? "Design de Logo & Branding" : "Logo Design & Branding",
+      description: pt
+        ? "Design de logotipo para startup de tecnologia com ícone geométrico em gradiente ciano/roxo, grid de construção, variações (primária, monocromática, ícone isolado, app icon) e manual de uso em formato PDF."
+        : "Logo design for technology startup featuring geometric icon in cyan/purple gradient, construction grid, variations (primary, monochrome, isolated icon, app icon) and PDF usage manual.",
+      highlights: pt
+        ? ["Ícone baseado em golden ratio", "5 variações do logo", "Grid de construção documentado", "Manual de uso em PDF"]
+        : ["Icon based on golden ratio", "5 logo variations", "Documented construction grid", "PDF usage manual"],
+      imgUrl: image.designLogoCreation,
+      techStack: ["Adobe Illustrator", "Figma", "After Effects"],
+    },
+    {
+      id: "concept-art-aether-07",
+      slug: "concept-art-aether-07",
+      category: "design",
+      categoryLabel: "Design",
+      accentColor: "#00d4ff",
+      title: pt ? "Concept Art — Aether Unit 07" : "Concept Art — Aether Unit 07",
+      subTitle: pt ? "Concept Art & Character Design" : "Concept Art & Character Design",
+      description: pt
+        ? "Design completo de personagem humanoide cyberpunk para produção de videogame. Inclui vistas frontal e lateral com callouts técnicos, guia de materiais (metal, circuitos, viseira), paleta de cores e lore sheet."
+        : "Complete cyberpunk humanoid character design for video game production. Includes front and side views with technical callouts, material guide (metal, circuits, visor), color palette and lore sheet.",
+      highlights: pt
+        ? ["Vistas frontal e lateral detalhadas", "Callouts técnicos de componentes", "Guia de materiais e shaders", "Lore sheet e backstory"]
+        : ["Detailed front & side views", "Technical component callouts", "Material & shader guide", "Lore sheet & backstory"],
+      imgUrl: image.designHumanoidConcept,
+      techStack: ["Photoshop", "Procreate", "ZBrush", "Blender"],
+    },
+    {
+      id: "3d-product-noir-velour",
+      slug: "3d-product-noir-velour",
+      category: "design",
+      categoryLabel: "Design",
+      accentColor: "#b8972a",
+      title: pt ? "3D Product — Noir Velour Parfum" : "3D Product — Noir Velour Parfum",
+      subTitle: pt ? "Modelagem 3D & Visualização de Produto" : "3D Modeling & Product Visualization",
+      description: pt
+        ? "Modelagem e renderização 3D ultra-realista de embalagem premium para perfumaria. Vidro cristal com texturas de refração, metal dourado gravado e caixa de veludo preto. Iluminação dramática de estúdio via Octane Render."
+        : "Ultra-realistic 3D modeling and rendering of premium perfumery packaging. Crystal glass with refraction textures, engraved gold metal and black velvet box. Dramatic studio lighting via Octane Render.",
+      highlights: pt
+        ? ["Renderização fotorrealista Octane", "Materiais de vidro e metal PBR", "Iluminação dramática de estúdio", "Arquivos prontos para gráfica"]
+        : ["Photorealistic Octane rendering", "PBR glass & metal materials", "Dramatic studio lighting", "Print-ready files"],
+      imgUrl: image.design3dProduct,
+      techStack: ["Blender", "Octane Render", "Substance Painter", "Photoshop"],
+    },
+    {
+      id: "brand-video-nexus",
+      slug: "brand-video-nexus",
+      category: "design",
+      categoryLabel: "Design",
+      accentColor: "#a855f7",
+      title: pt ? "Brand Video — Nexus Corp" : "Brand Video — Nexus Corp",
+      subTitle: pt ? "Motion Design & Produção de Vídeo" : "Motion Design & Video Production",
+      description: pt
+        ? "Produção de vídeo institucional completo para a Nexus Corp: storyboard de 12 frames, animação de logo reveal, tipografia cinética, VFX de partículas de energia, color grading cinematográfico e entrega em 4K."
+        : "Complete brand video production for Nexus Corp: 12-frame storyboard, logo reveal animation, kinetic typography, energy particle VFX, cinematic color grading and 4K delivery.",
+      highlights: pt
+        ? ["Storyboard aprovado em 12 frames", "Logo reveal com VFX de energia", "Tipografia cinética animada", "Entregue em 4K para todas as plataformas"]
+        : ["12-frame approved storyboard", "Logo reveal with energy VFX", "Animated kinetic typography", "Delivered in 4K for all platforms"],
+      imgUrl: image.designBrandVideo,
+      techStack: ["After Effects", "Premiere Pro", "Cinema 4D", "DaVinci Resolve"],
+    },
+    {
+      id: "visual-identity-system",
+      slug: "visual-identity-system",
+      category: "design",
+      categoryLabel: "Design",
+      accentColor: "#0ea5e9",
+      title: pt ? "Sistema de Identidade Visual" : "Visual Identity System",
+      subTitle: pt ? "Design de Sistema & Brand Guidelines" : "System Design & Brand Guidelines",
+      description: pt
+        ? "Desenvolvimento de sistema completo de identidade visual: paleta de cores primária e secundária, hierarquia tipográfica (display, heading, body, caption), iconografia, grid e regras de espaçamento e aplicações digitais e impressas."
+        : "Development of complete visual identity system: primary and secondary color palette, typographic hierarchy (display, heading, body, caption), iconography, grid and spacing rules and digital/print applications.",
+      highlights: pt
+        ? ["Paleta completa com tokens", "Hierarquia tipográfica 4 níveis", "Biblioteca de 60+ ícones", "Aplicações digitais e impressas"]
+        : ["Full palette with design tokens", "4-level typographic hierarchy", "60+ icon library", "Digital and print applications"],
+      imgUrl: image.designBrandIdentity,
+      techStack: ["Figma", "Adobe Illustrator", "Adobe InDesign", "Zeplin"],
+    },
+    {
+      id: "concept-art-android-female",
+      slug: "concept-art-android-female",
+      category: "design",
+      categoryLabel: "Design",
+      accentColor: "#ec4899",
+      title: pt ? "Concept Art — Android EVE" : "Concept Art — Android EVE",
+      subTitle: pt ? "Character Design & Concept Art" : "Character Design & Concept Art",
+      description: pt
+        ? "Design de personagem androide feminina futurista para produção cinematográfica. Armadura cromada com circuitos bioluminescentes, iluminação neon púrpura e azul, vistas de detalhe de equipamentos e ficha técnica completa."
+        : "Futuristic female android character design for cinematic production. Chrome armor with bioluminescent circuits, purple and blue neon lighting, equipment detail views and complete technical sheet.",
+      highlights: pt
+        ? ["Armadura cromada com circuitos", "Iluminação neon bioluminescente", "Vistas de detalhe de equipamentos", "Ficha técnica e paleta de materiais"]
+        : ["Chrome armor with circuits", "Bioluminescent neon lighting", "Equipment detail views", "Technical sheet & material palette"],
+      imgUrl: image.designHumanoidConcept,
+      techStack: ["Photoshop", "Procreate", "ZBrush", "Marvelous Designer"],
+    },
+    {
+      id: "3d-architecture-viz",
+      slug: "3d-architecture-viz",
+      category: "design",
+      categoryLabel: "Design",
+      accentColor: "#10b981",
+      title: pt ? "3D Architecture Visualization" : "3D Architecture Visualization",
+      subTitle: pt ? "Visualização Arquitetônica 3D" : "3D Architectural Visualization",
+      description: pt
+        ? "Visualização arquitetônica 3D fotorrealista de edifício comercial futurista. Atmosfera volumétrica ao entardecer, estrutura de vidro e aço com reflexos dramáticos, vegetação integrada e pessoas para escala."
+        : "Photorealistic 3D architectural visualization of a futuristic commercial building. Volumetric dusk atmosphere, glass and steel structure with dramatic reflections, integrated vegetation and people for scale.",
+      highlights: pt
+        ? ["Render fotorrealista ao entardecer", "Materiais PBR vidro e aço", "Atmosfera volumétrica com GI", "Vista aérea e perspectiva térrea"]
+        : ["Photorealistic dusk render", "PBR glass & steel materials", "Volumetric atmosphere with GI", "Aerial and ground perspective"],
+      imgUrl: image.design3dProduct,
+      techStack: ["3ds Max", "V-Ray", "Lumion", "Photoshop"],
+    },
+    {
+      id: "motion-graphics-social",
+      slug: "motion-graphics-social",
+      category: "design",
+      categoryLabel: "Design",
+      accentColor: "#f97316",
+      title: pt ? "Motion Graphics — Social Media" : "Motion Graphics — Social Media",
+      subTitle: pt ? "Motion Design & Animação" : "Motion Design & Animation",
+      description: pt
+        ? "Pacote de motion graphics para redes sociais: 20 templates animados para Reels, Stories e feed. Tipografia cinética, transições com partículas, logos animados e paleta consistente de marca para postagens de alto engajamento."
+        : "Motion graphics pack for social media: 20 animated templates for Reels, Stories and feed. Kinetic typography, particle transitions, animated logos and consistent brand palette for high-engagement posts.",
+      highlights: pt
+        ? ["20 templates animados prontos", "Formatos Reels, Stories e Feed", "Tipografia cinética de marca", "Arquivos editáveis em After Effects"]
+        : ["20 ready animated templates", "Reels, Stories and Feed formats", "Brand kinetic typography", "Editable After Effects files"],
+      imgUrl: image.designBrandVideo,
+      techStack: ["After Effects", "Premiere Pro", "Photoshop", "Illustrator"],
+    },
+    {
+      id: "logo-design-restaurant",
+      slug: "logo-design-restaurant",
+      category: "design",
+      categoryLabel: "Design",
+      accentColor: "#ef4444",
+      title: pt ? "Logo & Brand — Restaurante Alma" : "Logo & Brand — Restaurante Alma",
+      subTitle: pt ? "Logo Design & Identidade Visual" : "Logo Design & Visual Identity",
+      description: pt
+        ? "Criação de logo e identidade visual para restaurante premium. Marca tipográfica com ícone de folha minimalista, cardápio impresso, embalagens, sinalização e kit digital completo para redes sociais."
+        : "Logo and visual identity creation for premium restaurant. Typographic mark with minimalist leaf icon, printed menu, packaging, signage and complete digital kit for social networks.",
+      highlights: pt
+        ? ["Logo mark premium minimalista", "Cardápio e embalagem impressa", "Sinalização ambiente e menu digital", "Kit redes sociais completo"]
+        : ["Premium minimalist logo mark", "Printed menu & packaging", "Environment signage & digital menu", "Complete social media kit"],
+      imgUrl: image.designLogoCreation,
+      techStack: ["Adobe Illustrator", "Figma", "Adobe InDesign", "Photoshop"],
+    },
   ];
 };

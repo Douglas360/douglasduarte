@@ -12,6 +12,7 @@ const FILTERS = [
   { key: "web3", labelPt: "Web3", labelEn: "Web3" },
   { key: "fullstack", labelPt: "Full Stack", labelEn: "Full Stack" },
   { key: "frontend", labelPt: "Front-End", labelEn: "Front-End" },
+  { key: "design", labelPt: "Design", labelEn: "Design" },
 ];
 
 const ProjectCard = ({ project, onClick }) => (

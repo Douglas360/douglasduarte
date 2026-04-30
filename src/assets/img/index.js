@@ -36,6 +36,13 @@ import projWalletTracker from "./proj_wallet_tracker.png";
 import projElearn from "./proj_elearn.png";
 import projHealthApp from "./proj_health_app.png";
 
+// Design project images
+import designBrandIdentity from "./design_brand_identity.png";
+import designLogoCreation from "./design_logo_creation.png";
+import designHumanoidConcept from "./design_humanoid_concept.png";
+import design3dProduct from "./design_3d_product.png";
+import designBrandVideo from "./design_brand_video.png";
+
 const images = {
   logo,
   navIcon1,
@@ -73,6 +80,12 @@ const images = {
   projWalletTracker,
   projElearn,
   projHealthApp,
+  // Design images
+  designBrandIdentity,
+  designLogoCreation,
+  designHumanoidConcept,
+  design3dProduct,
+  designBrandVideo,
 };
 
 export default images;
