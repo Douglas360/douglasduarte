@@ -4,16 +4,16 @@ import aws from "../assets/img/aws.svg";
 import typescript from "../assets/img/typescript.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png";
-
 import imagem from "../assets/img/index";
+import { useLanguage } from "../i18n/LanguageContext";
 
 export const Skills = () => {
+  const { t } = useLanguage();
+  const skillsT = t("skills");
+
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -37,27 +37,23 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <p>
-                Having a solid skill set is an incredibly valuable asset in
-                today's competitive job market. Continuously seeking to improve
-                and develop your knowledge.
-              </p>
+              <h2>{skillsT.title}</h2>
+              <p>{skillsT.description}</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={react} alt="Image" />
+                  <img src={react} alt="React" />
                   <h5>React.js</h5>
                 </div>
                 <div className="item">
-                  <img src={node} alt="Image" />
+                  <img src={node} alt="Node" />
                   <h5>Node.js</h5>
                 </div>
                 <div className="item">
-                  <img src={typescript} alt="Image" />
+                  <img src={typescript} alt="Typescript" />
                   <h5>Typescript</h5>
                 </div>
                 <div className="item">
@@ -69,21 +65,20 @@ export const Skills = () => {
                     src={imagem.solidityLogo}
                     width={10}
                     height={10}
-                    alt=""
+                    alt="Solidity"
                   />
-
                   <h5>Solidity</h5>
                 </div>
                 <div className="item">
-                  <img src={imagem.hardhatLogo} alt="Image" />
+                  <img src={imagem.hardhatLogo} alt="HardHat" />
                   <h5>HardHat</h5>
                 </div>
                 <div className="item">
-                  <img src={imagem.blockchainLogo} alt="Image" />
+                  <img src={imagem.blockchainLogo} alt="Blockchain" />
                   <h5>Blockchain</h5>
                 </div>
                 <div className="item">
-                  <img src={aws} alt="Image" />
+                  <img src={aws} alt="AWS" />
                   <h5>AWS</h5>
                 </div>
               </Carousel>
@@ -91,7 +86,7 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img className="background-image-left" src={colorSharp} alt="bg" />
     </section>
   );
 };

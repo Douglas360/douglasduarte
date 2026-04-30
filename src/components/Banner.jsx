@@ -4,19 +4,17 @@ import image from "../assets/img/index";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { useLanguage } from "../i18n/LanguageContext";
 
 export const Banner = () => {
+  const { t } = useLanguage();
+  const bannerT = t("banner");
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [
-    "Blockchain Developer",
-    "Front-End Engineer",
-    "Web3 Developer",
-    "Full-Stack Developer?",
-  ];
   const period = 2000;
 
   useEffect(() => {
@@ -27,11 +25,11 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-  }, [text]);
+  }, [text, bannerT]);
 
   const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
+    let i = loopNum % bannerT.roles.length;
+    let fullText = bannerT.roles[i];
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
@@ -68,9 +66,9 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my portfolio</span>
+                  <span className="tagline">{bannerT.tagline}</span>
                   <h1>
-                    {`Hi! I'm Douglas`}{" "}
+                    {bannerT.greeting}{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -79,23 +77,7 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
-                  <p>
-                    I'm a passionate full-stack blockchain developer dedicated
-                    to crafting modern and user-friendly websites and
-                    applications with expertise in blockchain technology. With a
-                    strong background in HTML, CSS, JavaScript, and responsive
-                    design, I bring a unique set of skills to every project I
-                    work on. Whether you need a website or web application
-                    integrated with blockchain functionalities, decentralized
-                    finance (DeFi) solutions, smart contracts, or tokenization,
-                    I have the experience and knowledge to bring your
-                    blockchain-powered vision to life. My goal is to help my
-                    clients leverage blockchain technology to achieve their
-                    business objectives through effective website design and
-                    development. Let's collaborate to create something amazing
-                    that combines cutting-edge technology with user-centric
-                    design!
-                  </p>
+                  <p>{bannerT.description}</p>
 
                   <button
                     onClick={() => {
@@ -103,7 +85,7 @@ export const Banner = () => {
                       target.scrollIntoView({ behavior: "smooth" });
                     }}
                   >
-                    Let’s Connect <ArrowRightCircle size={25} />{" "}
+                    {bannerT.cta} <ArrowRightCircle size={25} />{" "}
                   </button>
                 </div>
               )}

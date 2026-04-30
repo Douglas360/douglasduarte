@@ -3,8 +3,12 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import images from "../assets/img/index";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import { useLanguage } from "../i18n/LanguageContext";
 
 export const NavBar = () => {
+  const { t, language, setLanguage } = useLanguage();
+  const navT = t("nav");
+
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
@@ -26,6 +30,10 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
+  const toggleLanguage = () => {
+    setLanguage(language === "en" ? "pt" : "en");
+  };
+
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -45,7 +53,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("home")}
               >
-                Home
+                {navT.home}
               </Nav.Link>
               <Nav.Link
                 href="#skills"
@@ -54,7 +62,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("skills")}
               >
-                Skills
+                {navT.skills}
               </Nav.Link>
               <Nav.Link
                 href="#projects"
@@ -65,7 +73,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("projects")}
               >
-                Projects
+                {navT.projects}
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
@@ -80,9 +88,29 @@ export const NavBar = () => {
                   <img src={images.navIcon3} alt="" />
                 </a>
               </div>
+              <button
+                className="lang-toggle"
+                onClick={toggleLanguage}
+                title={language === "en" ? "Mudar para Português" : "Switch to English"}
+                style={{
+                  background: "transparent",
+                  border: "1px solid rgba(255,255,255,0.5)",
+                  color: "#fff",
+                  borderRadius: "20px",
+                  padding: "4px 12px",
+                  fontSize: "13px",
+                  cursor: "pointer",
+                  marginRight: "10px",
+                  fontWeight: "600",
+                  letterSpacing: "0.5px",
+                  transition: "all 0.3s ease",
+                }}
+              >
+                {language === "en" ? "🇧🇷 PT" : "🇺🇸 EN"}
+              </button>
               <HashLink to="#connect">
                 <button className="vvd">
-                  <span>Contact</span>
+                  <span>{navT.contact}</span>
                 </button>
               </HashLink>
             </span>

@@ -20,8 +20,21 @@ import projImg10 from "./project-img10.png";
 import projImg11 from "./project-img11.png";
 import projImg12 from "./project-img12.png";
 import projImg13 from "./project-img13.png";
-
 import colorSharp2 from "./color-sharp2.png";
+
+// New AI-generated mockup images
+import projDefiYield from "./proj_defi_yield.png";
+import projNftMint from "./proj_nft_mint.png";
+import projDaoGov from "./proj_dao_gov.png";
+import projLaunchpad from "./proj_launchpad.png";
+import projCrmSaas from "./proj_crm_saas.png";
+import projRealEstate from "./proj_real_estate.png";
+import projSocialDapp from "./proj_social_dapp.png";
+import projTokenBridge from "./proj_token_bridge.png";
+import projAiSaas from "./proj_ai_saas.png";
+import projWalletTracker from "./proj_wallet_tracker.png";
+import projElearn from "./proj_elearn.png";
+import projHealthApp from "./proj_health_app.png";
 
 const images = {
   logo,
@@ -47,6 +60,19 @@ const images = {
   ethereumLogo,
   blockchainLogo,
   chainlinkLogo,
+  // New project mockups
+  projDefiYield,
+  projNftMint,
+  projDaoGov,
+  projLaunchpad,
+  projCrmSaas,
+  projRealEstate,
+  projSocialDapp,
+  projTokenBridge,
+  projAiSaas,
+  projWalletTracker,
+  projElearn,
+  projHealthApp,
 };
 
 export default images;
