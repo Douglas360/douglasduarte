@@ -17,7 +17,7 @@ export const Contact = () => {
     message: "",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState(contactT.send);
+  const [isSending, setIsSending] = useState(false);
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -29,24 +29,26 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText(contactT.sending);
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText(contactT.send);
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: contactT.successMessage });
-    } else {
-      setStatus({
-        succes: false,
-        message: contactT.errorMessage,
+    setIsSending(true);
+    try {
+      let response = await fetch("/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formDetails),
       });
+      let result = await response.json();
+      setFormDetails(formInitialDetails);
+      if (result.code === 200) {
+        setStatus({ succes: true, message: contactT.successMessage });
+      } else {
+        setStatus({ succes: false, message: contactT.errorMessage });
+      }
+    } catch {
+      setStatus({ succes: false, message: contactT.errorMessage });
+    } finally {
+      setIsSending(false);
     }
   };
 
@@ -127,8 +129,8 @@ export const Contact = () => {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
-                        <button type="submit">
-                          <span>{contactT.send}</span>
+                        <button type="submit" disabled={isSending}>
+                          <span>{isSending ? contactT.sending : contactT.send}</span>
                         </button>
                       </Col>
                       {status.message && (

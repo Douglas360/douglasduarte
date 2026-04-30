@@ -20,9 +20,9 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/douglashenriqueduarte/"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/douglashenriqueduarte/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="LinkedIn" /></a>
+              <a href="https://facebook.com/douglasduarte" target="_blank" rel="noreferrer"><img src={navIcon2} alt="Facebook" /></a>
+              <a href="https://instagram.com/douglashduarte1" target="_blank" rel="noreferrer"><img src={navIcon3} alt="Instagram" /></a>
             </div>
             <p>{footerT.copyright}</p>
           </Col>
