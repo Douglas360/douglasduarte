@@ -1,11 +1,11 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
 import { getProjects } from "../data/projectsData";
 import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
 import {
-  FaReact, FaNode, FaCss3, FaAws, FaPython, FaEthereum, FaArrowLeft, FaExternalLinkAlt, FaGithub,
+  FaReact, FaNode, FaCss3, FaAws, FaPython, FaEthereum, FaArrowLeft, FaExternalLinkAlt, FaGithub, FaTimes,
 } from "react-icons/fa";
 import {
   SiTypescript, SiTailwindcss, SiSolidity, SiIpfs, SiOpenzeppelin, SiChainlink, SiPostgresql, SiStripe,
@@ -41,6 +41,7 @@ export const ProjectDetailPage = () => {
   const { language, t } = useLanguage();
   const projects = getProjects(language);
   const project = projects.find((p) => p.slug === slug);
+  const [lightboxImg, setLightboxImg] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -117,6 +118,29 @@ export const ProjectDetailPage = () => {
                   ))}
                 </ul>
               </section>
+
+              {/* Gallery */}
+              {project.gallery && project.gallery.length > 0 && (
+                <section className="project-detail-section">
+                  <h2 className="project-detail-section-title">
+                    {language === "pt" ? "Galeria do Projeto" : "Project Gallery"}
+                  </h2>
+                  <div className="project-detail-gallery-grid">
+                    {project.gallery.map((img, i) => (
+                      <div 
+                        key={i} 
+                        className="project-detail-gallery-item"
+                        onClick={() => setLightboxImg(img)}
+                      >
+                        <img src={img} alt={`${project.title} screenshot ${i + 1}`} className="project-detail-gallery-img" />
+                        <div className="project-detail-gallery-overlay">
+                          <FaExternalLinkAlt style={{ color: 'white', fontSize: '1.2rem' }} />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
             </div>
 
             {/* Sidebar */}
@@ -217,6 +241,17 @@ export const ProjectDetailPage = () => {
         </div>
       </div>
       <Footer />
+      {/* Lightbox Modal */}
+      {lightboxImg && (
+        <div className="lightbox-overlay" onClick={() => setLightboxImg(null)}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={() => setLightboxImg(null)}>
+              <FaTimes />
+            </button>
+            <img src={lightboxImg} alt="Enlarged design" className="lightbox-img" />
+          </div>
+        </div>
+      )}
     </>
   );
 };

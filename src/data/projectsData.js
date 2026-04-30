@@ -367,6 +367,7 @@ export const getProjects = (language) => {
         ? ["Logo mark exclusivo e versões", "Paleta premium ouro e preto", "Papelaria corporativa completa", "Brand book com diretrizes de uso"]
         : ["Exclusive logo mark & versions", "Premium gold & black palette", "Complete corporate stationery", "Brand book with usage guidelines"],
       imgUrl: image.designBrandIdentity,
+      gallery: [image.designBrandIdentity, image.designLogoCreation, image.designBrandVideo],
       techStack: ["Adobe Illustrator", "Adobe InDesign", "Figma", "Photoshop"],
     },
     {
@@ -384,6 +385,7 @@ export const getProjects = (language) => {
         ? ["Ícone baseado em golden ratio", "5 variações do logo", "Grid de construção documentado", "Manual de uso em PDF"]
         : ["Icon based on golden ratio", "5 logo variations", "Documented construction grid", "PDF usage manual"],
       imgUrl: image.designLogoCreation,
+      gallery: [image.designLogoCreation, image.designBrandIdentity, image.designHumanoidConcept],
       techStack: ["Adobe Illustrator", "Figma", "After Effects"],
     },
     {
@@ -401,6 +403,7 @@ export const getProjects = (language) => {
         ? ["Vistas frontal e lateral detalhadas", "Callouts técnicos de componentes", "Guia de materiais e shaders", "Lore sheet e backstory"]
         : ["Detailed front & side views", "Technical component callouts", "Material & shader guide", "Lore sheet & backstory"],
       imgUrl: image.designHumanoidConcept,
+      gallery: [image.designHumanoidConcept, image.design3dProduct, image.designBrandVideo],
       techStack: ["Photoshop", "Procreate", "ZBrush", "Blender"],
     },
     {
@@ -418,6 +421,7 @@ export const getProjects = (language) => {
         ? ["Renderização fotorrealista Octane", "Materiais de vidro e metal PBR", "Iluminação dramática de estúdio", "Arquivos prontos para gráfica"]
         : ["Photorealistic Octane rendering", "PBR glass & metal materials", "Dramatic studio lighting", "Print-ready files"],
       imgUrl: image.design3dProduct,
+      gallery: [image.design3dProduct, image.designBrandIdentity, image.designHumanoidConcept],
       techStack: ["Blender", "Octane Render", "Substance Painter", "Photoshop"],
     },
     {
@@ -435,6 +439,7 @@ export const getProjects = (language) => {
         ? ["Storyboard aprovado em 12 frames", "Logo reveal com VFX de energia", "Tipografia cinética animada", "Entregue em 4K para todas as plataformas"]
         : ["12-frame approved storyboard", "Logo reveal with energy VFX", "Animated kinetic typography", "Delivered in 4K for all platforms"],
       imgUrl: image.designBrandVideo,
+      gallery: [image.designBrandVideo, image.design3dProduct, image.designLogoCreation],
       techStack: ["After Effects", "Premiere Pro", "Cinema 4D", "DaVinci Resolve"],
     },
     {
@@ -452,6 +457,7 @@ export const getProjects = (language) => {
         ? ["Paleta completa com tokens", "Hierarquia tipográfica 4 níveis", "Biblioteca de 60+ ícones", "Aplicações digitais e impressas"]
         : ["Full palette with design tokens", "4-level typographic hierarchy", "60+ icon library", "Digital and print applications"],
       imgUrl: image.designBrandIdentity,
+      gallery: [image.designBrandIdentity, image.designLogoCreation, image.design3dProduct],
       techStack: ["Figma", "Adobe Illustrator", "Adobe InDesign", "Zeplin"],
     },
     {
@@ -469,6 +475,7 @@ export const getProjects = (language) => {
         ? ["Armadura cromada com circuitos", "Iluminação neon bioluminescente", "Vistas de detalhe de equipamentos", "Ficha técnica e paleta de materiais"]
         : ["Chrome armor with circuits", "Bioluminescent neon lighting", "Equipment detail views", "Technical sheet & material palette"],
       imgUrl: image.designHumanoidConcept,
+      gallery: [image.designHumanoidConcept, image.design3dProduct, image.designBrandVideo],
       techStack: ["Photoshop", "Procreate", "ZBrush", "Marvelous Designer"],
     },
     {
@@ -486,6 +493,7 @@ export const getProjects = (language) => {
         ? ["Render fotorrealista ao entardecer", "Materiais PBR vidro e aço", "Atmosfera volumétrica com GI", "Vista aérea e perspectiva térrea"]
         : ["Photorealistic dusk render", "PBR glass & steel materials", "Volumetric atmosphere with GI", "Aerial and ground perspective"],
       imgUrl: image.design3dProduct,
+      gallery: [image.design3dProduct, image.designBrandIdentity, image.designHumanoidConcept],
       techStack: ["3ds Max", "V-Ray", "Lumion", "Photoshop"],
     },
     {
@@ -503,6 +511,7 @@ export const getProjects = (language) => {
         ? ["20 templates animados prontos", "Formatos Reels, Stories e Feed", "Tipografia cinética de marca", "Arquivos editáveis em After Effects"]
         : ["20 ready animated templates", "Reels, Stories and Feed formats", "Brand kinetic typography", "Editable After Effects files"],
       imgUrl: image.designBrandVideo,
+      gallery: [image.designBrandVideo, image.designLogoCreation, image.design3dProduct],
       techStack: ["After Effects", "Premiere Pro", "Photoshop", "Illustrator"],
     },
     {
@@ -520,6 +529,7 @@ export const getProjects = (language) => {
         ? ["Logo mark premium minimalista", "Cardápio e embalagem impressa", "Sinalização ambiente e menu digital", "Kit redes sociais completo"]
         : ["Premium minimalist logo mark", "Printed menu & packaging", "Environment signage & digital menu", "Complete social media kit"],
       imgUrl: image.designLogoCreation,
+      gallery: [image.designLogoCreation, image.designBrandIdentity, image.design3dProduct],
       techStack: ["Adobe Illustrator", "Figma", "Adobe InDesign", "Photoshop"],
     },
   ];
